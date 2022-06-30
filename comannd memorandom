@@ -18,4 +18,11 @@ git diff --staged
 
 
 git push <リモート名> <ブランチ名>
-  git push origin master
+  ex)　git push origin master
+
+
+alias
+  WHAT?: Define command abbreviations
+  EXAM : git config --global alias.co checkout
+  MRAN : abbreviationed checkout as co
+  
