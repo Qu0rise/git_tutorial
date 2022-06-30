@@ -90,7 +90,34 @@ git reser HEAD .
   ステージした変更を取り消す
   Cancel any changes that have made to the stage.
   make to :する，なる
-
   ※このコマンドは，ステージに上げた変更を取り消すだけなので，ワークツリーの変更には影響が無い！
   理解．
-  
+
+git commit --amend
+  直前のコミットをやり直す
+  ※pushしたものは変更NG
+  これを実行すると，今のstaging areaをもとにコミットをやり直す，という意味になる
+  つまり，失敗したら
+  ワークツリーでそのファイルを変更
+  git add
+  それで変更したファイルをステージングエリアにのせてから，このコマンドを実行する．
+
+
+git remote add <remote name> <remote URL>
+  リモートリポジトリを新規追加する．
+  これを実行すると，今後はTutorialという名前でGithubリポジトリにアップしたり取得出来たりする．
+
+  example)
+    git remote add tutorial https.//....
+  　-> MY: Registered URL ,that is shortcut, for remote repository name as 'tutorial' .
+    -> -> Resistor the URL of the remote repository with a shortcut named tutorial
+    Tutorial という名前のショートカットで，リモートリポジトリのURLを登録する
+
+
+git remote
+  設定しているリモートリポジトリの情報を確認する事ができる
+  現時点で登録されているショートカットは
+  origin
+  bak
+  の2つ
+　-vで各リポジトリのショートカットのURLが表示される
