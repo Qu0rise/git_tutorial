@@ -121,3 +121,8 @@ git remote
   bak
   の2つ
 　-vで各リポジトリのショートカットのURLが表示される
+
+
+git push <remote repository shortcht name> <branch>
+  ex) git remote origin master
+      git remote -u bak master
