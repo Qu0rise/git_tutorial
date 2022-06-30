@@ -25,4 +25,7 @@ alias
   WHAT?: Define command abbreviations
   EXAM : git config --global alias.co checkout
   MRAN : abbreviationed checkout as co
-  
+
+git config
+  設定を変更するコマンド
+  Command to change settings
