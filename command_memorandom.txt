@@ -1,0 +1,67 @@
+
+========================
+COMMAND explanation
+========================
+
+リポジトリ
+｜
+ステージ
+｜
+ワークツリー
+
+
+
+
+.ignoreファイルの書き方
+#から始まる者はコメントアウト
+
+#指定したファイルを除外
+index.html
+
+#ルートディレクトリを指定
+/root.html
+
+#ディレクトリ以下を除外
+.dir/
+
+#/以外の文字列にマッチ「＊」
+/*/*.css
+　意味：1つ階層を潜ったところにあるディレクトリにある
+　　　　任意のcssファイル全てをgitの管理から除外
+　　　
+========================
+COMMAND memorandom
+========================
+
+git diff
+  Command to check change difference
+  　ワークツリー　と　ステージ　の　差分
+
+
+git diff --staged
+　ステージ　と　リポジトリ　の　差分
+
+
+
+git push <リモート名> <ブランチ名>
+  ex)　git push origin master
+
+
+alias
+  WHAT?: Define command abbreviations
+  EXAM : git config --global alias.co checkout
+  MRAN : abbreviationed checkout as co
+
+git config
+  設定を変更するコマンド
+  Command to change settings
+
+
+git config --global
+  --globalをつけるとPC全体の設定を変更するコマンドとなる
+  Command to change settings in PC
+
+.gitignore
+  バージョン管理する必要が無いファイル
+  File that need not to manage version
+  Files that do not need to be versioned
