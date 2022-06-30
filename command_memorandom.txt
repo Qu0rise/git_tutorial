@@ -126,3 +126,24 @@ git remote
 git push <remote repository shortcht name> <branch>
   ex) git remote origin master
       git remote -u bak master
+
+git fetch <remote name>
+  retrieving information from a remote repository
+  練習
+  まず，Githubの方でhome.htmlを作成して，”リモートリポジトリ内”でコミット
+　そのあと
+  git fetch origin
+  ここで取得した情報はどこに保存されているか確認
+  git branch -a
+  今いるブランチに※がつく
+
+git checkout remotes/origin/master
+  remotes/origin/masterに，
+  自分のワークツリーの内容を切り替えるという事を行っている
+　もとのブランチに戻る場合は
+  git checkout master
+
+  最後に，取得してきたリモートリポジトリの情報を，
+  ワークツリーに取り込む．
+
+  
