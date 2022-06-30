@@ -65,3 +65,32 @@ git config --global
   バージョン管理する必要が無いファイル
   File that need not to manage version
   Files that do not need to be versioned
+　See memo_udemy.txt for how to write the file
+
+
+git checkout -- <file name>
+git checkout -- <directory name>
+  cancel any changed of File or directory
+  ワークツリーにて内容を変更
+  (addはまだしていない)
+  git status
+  git checkout -- <file name>
+  ワークツリー上の変更が戻される
+
+
+git checkout -- .
+  全変更を取り消す
+  --をつけているのは，ブランチ名とファイル名が被った時にどちらを指しているのか
+  Gitが分からなくなることを避けるため．
+  ピリオドは任意のファイル全てという意味．
+
+git reset HEAD <file name>
+or
+git reser HEAD .
+  ステージした変更を取り消す
+  Cancel any changes that have made to the stage.
+  make to :する，なる
+
+  ※このコマンドは，ステージに上げた変更を取り消すだけなので，ワークツリーの変更には影響が無い！
+  理解．
+  
