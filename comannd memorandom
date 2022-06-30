@@ -1,0 +1,16 @@
+command memo
+
+リポジトリ
+｜
+ステージ
+｜
+ワークツリー
+
+
+git diff
+  Command to check change difference
+  　ワークツリー　と　ステージ　の　差分
+
+
+git diff --staged
+　ステージ　と　リポジトリ　の　差分
