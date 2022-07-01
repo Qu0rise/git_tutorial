@@ -167,3 +167,23 @@ git branch <branch name>
   This command only can do that, not switch branch pointer.
   This command only creates a branch, but does not switch branches.
   ex)git branch feature
+
+git branch
+  今のブランチに何があるか確認する事ができる
+
+git branch -a
+  リモートリポジトリのブランチも表示できる．
+
+git log　--oneline --decorate
+  それぞれのブランチがどのコミットを指しているか？
+  ということを確認するコマンドがgit log コマンド．
+  --oneline はlogを１行に表示
+  --decorate は，どのブランチがどのコミットを指しているかを確認するために必要．
+
+
+git checkout <exiting branch name>
+  ex) git checkout feature
+  ブランチを切り替えるコマンド
+
+git checkout -b <new branch name>
+  -bオプションをつけることで，ブランチの作成と切替を一度にすることが出来る．
