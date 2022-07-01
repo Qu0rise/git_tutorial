@@ -187,3 +187,9 @@ git checkout <exiting branch name>
 
 git checkout -b <new branch name>
   -bオプションをつけることで，ブランチの作成と切替を一度にすることが出来る．
+
+git branch -m <new branch name>
+  今いるブランチ名を変更したい時に使用する．
+  -m はmoveの略
+
+git branch -d <branch name>
