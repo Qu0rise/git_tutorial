@@ -146,4 +146,24 @@ git checkout remotes/origin/master
   最後に，取得してきたリモートリポジトリの情報を，
   ワークツリーに取り込む．
 
-  
+git pull <remote name> <branch name>
+  -> merged information fetched from the remote repository
+  リモートから情報を取得して，マージまで行う作業を一括で行いたい時に使用するコマンド
+      git pull origin master
+      =
+      git fetch origin master
+      git merge origin/master
+
+git remote show <remote name>
+git remote show origin
+  リモートリポジトリの情報を詳細に知ることができる
+
+
+git branch <branch name>
+  ブランチを新規作成するコマンド．
+  MY: The command, create new branch.
+  Dp: Command to create a new branch.
+  このコマンドはブランチを作成するだけで，ブランチの切替までは行わない．
+  This command only can do that, not switch branch pointer.
+  This command only creates a branch, but does not switch branches.
+  ex)git branch feature
