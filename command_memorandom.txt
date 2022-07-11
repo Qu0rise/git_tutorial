@@ -167,3 +167,7 @@ git branch <branch name>
   This command only can do that, not switch branch pointer.
   This command only creates a branch, but does not switch branches.
   ex)git branch feature
+
+
+git rebase <branch name>
+  ブランチの基点となるコミットを別のコミットに移動する．
